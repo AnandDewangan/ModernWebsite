@@ -91,26 +91,6 @@ span{
     border-bottom: 2px solid var(--main-color);
     color: var(--main-color);
 }
-.h-icon{
-    display: flex;
-    align-items: center;
-    padding: 10px 22px;
-    background: var(--main-color);
-    border-radius: 5rem;
-}
-.h-icons i{
-	font-size: 22px;
-	color: var(--bg-color);
-	margin-right: 15px;
-	margin-left: 8px;
-}
-#menu-icon {
-    font-size: 32px;
-    color: var(--bg-color);
-    z-index: 6;
-    cursor: pointer;
-    display: none;
-}
 
 /* home section */
 .home{
@@ -168,7 +148,6 @@ span{
 .main-text p{
     font-size: var(--p-font);
     font-weight: 500;
-    line-height: 32px;
     text-align: center;
 }
 .container-box{
@@ -238,6 +217,7 @@ span{
 }
 .row img{
 	width: 100%;
+    border: 2px solid var(--main-color);
 }
 .menu-text{
 	display: flex;
@@ -291,4 +271,70 @@ footer{
 footer p{
     background: var(--second-color);
     color: var(--bg-color);
+}
+
+@media screen and (width <= 1200px) {
+    *{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home{
+        align-items: center;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
+    .main-text{
+        width: 100%;
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+    .c-mainbx{
+        width: 100%;
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-content{
+        align-items: center;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40%;
+    }
+    
+}
+@media screen and (width >= 320px){
+    .home{
+        margin-top: 50%;
+    }
+}
+@media screen and (width >= 450px){
+    .home{
+        margin-top: 40%;
+    }
+}
+@media screen and (width >= 600px){
+    .home{
+        margin-top: 20%;
+    }
+}
+@media screen and (width >= 920px){
+    .home{
+        margin-top: 10%;
+    }
 }
