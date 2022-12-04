@@ -257,6 +257,10 @@ span{
     color: var(--second-color);
 }
 
+.contact .main-content p a{
+    color: var(--main-color);
+}
+
 /* Footer section */
 .scroll-top{
 	position: fixed;
