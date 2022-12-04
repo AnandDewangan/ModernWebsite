@@ -64,6 +64,7 @@ header{
     padding: 13px 5%;
     box-shadow: 2px 2px 2px 4px var(--main-color);
     backdrop-filter: blur(3px);
+    transition: all 0.3s ease-in-out;
 }
 
 .logo{
