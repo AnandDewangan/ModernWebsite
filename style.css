@@ -23,6 +23,11 @@
 	--p-font: 1.1rem;
 }
 
+.dark-mode{
+    --text-color: #fffbf6;
+	--bg-color: #302e29;
+}
+
 @keyframes demo {
     0%{
         color: var(--text-color);
@@ -91,7 +96,10 @@ span{
     border-bottom: 2px solid var(--main-color);
     color: var(--main-color);
 }
-
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
 /* home section */
 .home{
     height: 88vh;
@@ -114,7 +122,7 @@ span{
 .home-text p{
     font-size: var(--p-font);
     font-weight: 500;
-    color:#222;
+    color:--text-color;
     line-height: 32px;
     margin-bottom: 2.3rem;
 }
@@ -122,7 +130,7 @@ span{
     background: var(--main-color);
     border: none;
     padding: 7px 14px;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 15px;
 	font-weight: 600;
 	border-radius: 5rem;
@@ -318,23 +326,9 @@ footer p{
     }
     
 }
-@media screen and (width >= 320px){
-    .home{
-        margin-top: 50%;
-    }
+@media (orientation: portrait){
+    .home{margin-top: 20%;}
 }
-@media screen and (width >= 450px){
-    .home{
-        margin-top: 40%;
-    }
-}
-@media screen and (width >= 600px){
-    .home{
-        margin-top: 20%;
-    }
-}
-@media screen and (width >= 920px){
-    .home{
-        margin-top: 10%;
-    }
+@media screen and (width <= 600px){
+    .home{margin-top: 45%;}
 }
